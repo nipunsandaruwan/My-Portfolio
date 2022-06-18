@@ -1,0 +1,51 @@
+/* top */
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 1000;
+    color: black;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.service-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-items{
+    color: aliceblue;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    border-radius: 10px;
+    
+    background-image: url('src/assets/car.jpg');
+    background-size: cover;
+    margin: 10px 5%;
+}
+
+h2{
+    text-align: left;
+}
