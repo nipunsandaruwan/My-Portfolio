@@ -1,0 +1,133 @@
+
+
+.about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.about-img img{
+    width: 230px;
+    height: 340px;
+}
+
+/* .col-left{
+    width: 250px;
+    height:360px
+} */
+
+.col-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.col-right h2{
+    font-size: 1.3rem;
+    font-weight: 1000;
+    letter-spacing: .18rem;
+    margin-bottom: 10px;
+}
+ 
+.col-right p{
+    margin-bottom: 20px;
+}
+
+.cta{
+    display:block;
+    padding: 10px 30px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid red;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    width: fit-content;
+    margin-bottom: 20px;
+
+    transition: 1s ease ;
+    transition-property: background-color,color;
+}
+
+.cta:hover{
+    color: white;
+    background-color: red;
+}
+
+
+/* .about-img{
+    position: relative;
+    border: 5px solid rgb(255, 0, 0);
+    z-index: 1;
+} */
+
+.about-img{
+    width: 230px;
+    height: 340px;
+    position: relative;
+    border: 10px solid white;
+    z-index: 1;
+}
+
+.about-img::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 25px;
+    height: 100%;
+    width: 100%;
+    border: 7px solid red;
+    z-index: -1;
+} 
+
+
+@media only screen and (min-width:768px){
+    .about{
+        flex-direction: row;
+        margin-top: 0;
+        min-height: 300px;
+    }
+    .col-left{
+        flex-basis: 40%;
+        margin-left: 30px;
+        margin-right: 0;
+        
+    }
+    /* img{
+        border-style: 10px solid white;
+        border-image: 10px solid white;
+    } */
+
+    h1{
+        font-size:3rem;
+    }
+}
+
+
+@media only screen and (min-width:1200px){
+    .about{
+        width: 90%;
+    }
+    .col-left{
+        flex-basis: 30%;
+        margin-left: 50px;
+        margin-right: 0;
+        padding-right: 10px;
+        
+    }
+    .col-right{
+        margin-right:0 ;
+        margin-left: 0;
+        padding-left: 5px;
+        text-align: left;
+    }
+    p{
+        text-align: left;
+    }
+}
